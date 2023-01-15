@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+}
+.main-section {
+    display: block;
+    text-align: left;
+    padding-left: 17%;
+    max-width: 80%;;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-section {
+      padding-left: 32%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+.main-section {
+    padding-left: 45%;
+}
+}
+
+.main-section header{
+    font-size: 25px;
+    font-family: sans-serif, Geneva;
+    padding-top: -20px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-right: 1px solid grey;
+}
+
+#navbar a {
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 15px 0;
+}
