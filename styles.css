@@ -2,10 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#main-doc {
-    display: flex;
-    flex-direction: column;
-}
 .main-section {
     display: block;
     text-align: left;
