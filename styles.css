@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,19 +10,8 @@ html {
     display: block;
     text-align: left;
     padding-left: 17%;
-    max-width: 80%;;
-}
-
-@media screen and (max-width: 1200px) {
-    .main-section {
-      padding-left: 32%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-.main-section {
-    padding-left: 45%;
-}
+    position: relative;
+    max-width: 85%;
 }
 
 .main-section header{
@@ -30,13 +23,56 @@ html {
 #navbar {
     display: flex;
     flex-direction: column;
+    border-right: 2px solid grey;
+    height: 100%;
     position: fixed;
-    border-right: 1px solid grey;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: fit-content;
 }
 
 #navbar a {
     border-bottom: 1px solid grey;
     text-decoration: none;
     font-size: 25px;
-    margin: 15px 0;
+    margin: 10px 0;
+}
+
+.example {
+    background-color: lightgray;
+    margin: 0 15px;
+    /* width: fit-content; */
+}
+
+@media only screen and (max-width: 767px) {
+    #navbar {
+        position: static;
+        height: 10%;
+        width: 100%;
+        border-right: none;
+        text-align: center;
+    }
+
+    #main-doc {
+       width: 100%;
+       left: 0;
+       position: absolute;
+    }
+
+    body {
+        overflow-x:hidden ;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px)  {
+    #main-doc {
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1024px)  {
+    #main-doc {
+        padding-left: 50px;
+    }
 }
